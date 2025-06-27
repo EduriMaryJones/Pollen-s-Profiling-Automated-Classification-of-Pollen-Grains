@@ -31,22 +31,29 @@ This project is a Flask-based web application for classifying pollen grain image
 ## 📂 Project Structure
 
 ```
-├── app.py                    # Flask backend application
-├── pollen_classification.ipynb  # Model training and evaluation notebook
-├── pollen_model.keras        # Trained CNN model
-├── labelencoder.pkl          # Saved label encoder
-├── requirements.txt          # Dependencies list
-├── templates/                # HTML templates (Jinja2)
-│   ├── index.html
-│   ├── about.html
-│   ├── prediction.html
-│   ├── team.html
-│   └── contact.html
-├── static/                   # Static assets (CSS, images)
-│   ├── style.css             # Global stylesheet
-│   └── images/               # Logo and team/profile images
-├── uploads/                  # Uploaded images for prediction (temporary)
-└── LICENSE                   # MIT License for the project
+project-root/
+├── flask/                    # Main Flask app directory
+│   ├── app.py               # Flask backend application
+│   ├── pollen_classification.ipynb  # Model training and evaluation notebook
+│   ├── pollen_model.keras   # Trained CNN model
+│   ├── labelencoder.pkl     # Saved label encoder
+│   ├── requirements.txt     # Dependencies list
+│   ├── templates/           # HTML templates (Jinja2)
+│   │   ├── index.html
+│   │   ├── about.html
+│   │   ├── prediction.html
+│   │   ├── team.html
+│   │   └── contact.html
+│   ├── static/              # Static assets (CSS, images)
+│   │   ├── style.css        # Global stylesheet
+│   │   └── images/          # Logo and team/profile images
+│   └── uploads/             # Uploaded images for prediction (temporary)
+├── pollen_dataset/          # Dataset directory (images/, bboxes.csv, class_map.csv)
+│   ├── images/              # Raw pollen grain images
+│   ├── bboxes.csv           # Bounding box coordinates for cropping
+│   └── class_map.csv        # Mapping of class IDs to class names
+├── LICENSE                  # MIT License for the project
+└── README.md                # Project overview and setup instructions
 ```
 
 ---
@@ -60,14 +67,20 @@ git clone https://github.com/your-username/pollen-classification-app.git
 cd pollen-classification-app
 ```
 
-2. **Create a virtual environment (recommended):**
+2. **Navigate to Flask app directory:**
+
+```bash
+cd flask
+```
+
+3. **Create a virtual environment (recommended):**
 
 ```bash
 python -m venv venv
 source venv/bin/activate   # On Windows: venv\Scripts\activate
 ```
 
-3. **Install dependencies:**
+4. **Install dependencies:**
 
 ```bash
 pip install -r requirements.txt
@@ -81,8 +94,7 @@ pip install -r requirements.txt
 python app.py
 ```
 
-Then open your browser and go to:
-📍 `http://127.0.0.1:5000/`
+Then open your browser and go to: 📍 `http://127.0.0.1:5000/`
 
 ---
 
@@ -90,8 +102,8 @@ Then open your browser and go to:
 
 If you want to retrain the model or modify it:
 
-* Open `pollen_classification.ipynb` in Jupyter Notebook.
-* Make sure `pollen_dataset/images/`, `bboxes.csv`, and `class_map.csv` are properly placed.
+* Open `pollen_classification.ipynb` in Jupyter Notebook inside the `flask/` folder.
+* Ensure `pollen_dataset/images/`, `bboxes.csv`, and `class_map.csv` are present outside the `flask/` folder as shown in the structure.
 * Execute all cells to preprocess data, train the CNN, and export:
 
   * `pollen_model.keras`
@@ -109,10 +121,26 @@ If you want to retrain the model or modify it:
 
 ## 👥 Team
 
-Meet our amazing contributors on the **Our Team** page!
+### 👨‍💻 Contributors
+
+| **Names of the Team Members**      |
+| ---------------------------------- |
+| Mamidela Venkata Naga Suseel Kumar |
+| Eduri Mary Jones                   |
+| Idimukkala Yasasswini              |
+| Inturi Venkata Vikash              |
+| J. Pushpitha                       |
+
+Meet our amazing contributors who made this project possible! You can also find them on the **Our Team** page!
 
 ---
 
 ## 📬 Contact
 
 Feel free to reach out via the **Contact** page with suggestions, feedback, or collaboration ideas!
+
+---
+
+## ✉️ License
+
+This project is licensed under the MIT License. See the [LICENSE](./LICENSE) file for details.
