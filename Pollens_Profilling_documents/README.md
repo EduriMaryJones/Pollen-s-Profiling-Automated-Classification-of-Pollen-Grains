@@ -1,4 +1,4 @@
-# 📄 Pollens\_Profilling\_Documents - Documentation Repository
+# 📄 Pollens_Profilling_Documents - Documentation Repository
 
 This folder contains all supporting documentation related to the project **Pollen's Profiling: Automated Classification of Pollen Grains**. The main source code and Flask web application reside in the `flask/` directory under the root project folder.
 
@@ -19,25 +19,27 @@ The purpose of this documentation folder is to provide all design plans, diagram
 ## 📂 Folder Contents
 
 ```
-Pollens_Profilling_documents/
-├── README.md                          # This file
-├── Customer Journey Map.pdf           # Visual UX journey
-├── UI Mockups/                        # Interface and layout drafts
-├── ERD_Diagram.pdf                    # Database structure
-├── Project_Plan.docx / .pdf           # Timeline and planning notes
-├── Report/                            # Detailed write-up of project
-├── PPT/                               # Slide presentation
-└── Other_References/                  # External articles, citations
+Pollens_Profilling_documents/              # Project documentation folder
+├── Ideation Phase/                        # Idea generation and problem understanding
+├── Performance Testing/                   # Model and system testing results
+├── Project Design Phase/                  # UI and system design documents
+├── Project Planning Phase/                # Timeline and planning details
+├── Requirement Analysis/                  # Project requirements and analysis
+├── Final Report.docx                      # Final project report (Word)
+├── Final Report.pdf                       # Final project report (PDF)
+├── Machine Learning Documentation Format.docx  # ML report draft (Word)
+├── Machine Learning Documentation Format.pdf   # ML report draft (PDF)
+└── README.md                              # Info about this folder
 ```
 
 ---
 
 ## 🔻 How This Supports the Main Project
 
-* **Design References**: UI sketches and database design to help developers.
-* **Planning Docs**: Track project progress, versions, and research.
-* **Reports**: Formal documentation for submission or archiving.
-* **Customer Journey Map**: Visualizes user interaction with the app.
+- **Design References**: UI sketches and database design to help developers.
+- **Planning Docs**: Track project progress, versions, and research.
+- **Reports**: Formal documentation for submission or archiving.
+- **Customer Journey Map**: Visualizes user interaction with the app.
 
 > Note: The codebase and machine learning implementation are found in the root project under `flask/`
 
