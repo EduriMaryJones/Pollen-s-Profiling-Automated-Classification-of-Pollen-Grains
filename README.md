@@ -32,28 +32,42 @@ This project is a Flask-based web application for classifying pollen grain image
 
 ```
 project-root/
-├── flask/                    # Main Flask app directory
-│   ├── app.py               # Flask backend application
-│   ├── pollen_classification.ipynb  # Model training and evaluation notebook
-│   ├── pollen_model.keras   # Trained CNN model
-│   ├── labelencoder.pkl     # Saved label encoder
-│   ├── requirements.txt     # Dependencies list
-│   ├── templates/           # HTML templates (Jinja2)
-│   │   ├── index.html
-│   │   ├── about.html
-│   │   ├── prediction.html
-│   │   ├── team.html
-│   │   └── contact.html
-│   ├── static/              # Static assets (CSS, images)
-│   │   ├── style.css        # Global stylesheet
-│   │   └── images/          # Logo and team/profile images
-│   └── uploads/             # Uploaded images for prediction (temporary)
-├── pollen_dataset/          # Dataset directory (images/, bboxes.csv, class_map.csv)
-│   ├── images/              # Raw pollen grain images
-│   ├── bboxes.csv           # Bounding box coordinates for cropping
-│   └── class_map.csv        # Mapping of class IDs to class names
-├── LICENSE                  # MIT License for the project
-└── README.md                # Project overview and setup instructions
+├── pollens_profiling_project_executable_files/   # Root folder for executable files
+│   ├── flask/                          # Main Flask app directory
+│   │   ├── app.py                      # Flask backend application
+│   │   ├── pollen_classification.ipynb # Model training and evaluation notebook
+│   │   ├── pollen_model.keras          # Trained CNN model
+│   │   ├── labelencoder.pkl            # Saved label encoder
+│   │   ├── requirements.txt            # Dependencies list
+│   │   ├── templates/                  # HTML templates (Jinja2)
+│   │   │   ├── index.html
+│   │   │   ├── about.html
+│   │   │   ├── prediction.html
+│   │   │   ├── team.html
+│   │   │   └── contact.html
+│   │   ├── static/                    # Static assets (CSS, images)
+│   │   │   ├── style.css
+│   │   │   └── images/
+│   │   └── uploads/                   # Uploaded images for prediction
+│   └── pollen_dataset/                # Dataset directory
+│       ├── images/                    # Raw pollen grain images
+│       ├── bboxes.csv                 # Bounding box data
+│       └── class_map.csv              # Mapping of class IDs to class names
+├── Pollens_Profilling_documents/      # Complete documentation folder
+│   ├── Ideation Phase/
+│   ├── Performance Testing/
+│   ├── Project Design Phase/
+│   ├── Project Planning Phase/
+│   ├── Requirement Analysis/
+│   ├── Final Report.docx
+│   ├── Final Report.pdf
+│   ├── Machine Learning Documentation Format.docx
+│   ├── Machine Learning Documentation Format.pdf
+│   └── README.md
+├── video_demo/                        # Demo video folder (author: Mary Jones)
+│   └── pollen_demo_video.mp4
+├── LICENSE
+└── README.md
 ```
 
 ---
@@ -70,7 +84,7 @@ cd Pollen-s-Profiling-Automated-Classification-of-Pollen-Grains
 2. **Navigate to Flask app directory:**
 
 ```bash
-cd flask
+cd pollens_profiling_project_executable_files/flask
 ```
 
 3. **Create a virtual environment (recommended):**
