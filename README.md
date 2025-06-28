@@ -45,10 +45,10 @@ project-root/
 │   │   │   ├── prediction.html
 │   │   │   ├── team.html
 │   │   │   └── contact.html
-│   │   ├── static/                     # Static assets (CSS, images)
+│   │   ├── static/                    # Static assets (CSS, images)
 │   │   │   ├── style.css
 │   │   │   └── images/
-│   │   └── uploads/                    # Uploaded images for prediction
+│   │   └── uploads/                   # Uploaded images for prediction
 │   └── pollen_dataset/                # Dataset directory
 │       ├── images/                    # Raw pollen grain images
 │       ├── bboxes.csv                 # Bounding box data
