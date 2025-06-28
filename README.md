@@ -52,8 +52,8 @@ project-root/
 │   └── pollen_dataset/                # Dataset directory
 │       ├── images/                    # Raw pollen grain images
 │       ├── bboxes.csv                 # Bounding box data
-│       └── class_map.csv              # Mapping of class IDs to class names              # Mapping of class IDs to class names
-├── Pollens_Profilling_documents/  # Complete documentation folder
+│       └── class_map.csv              # Mapping of class IDs to class names
+├── Pollens_Profilling_documents/      # Complete documentation folder
 │   ├── Ideation Phase/
 │   ├── Performance Testing/
 │   ├── Project Design Phase/
@@ -64,7 +64,7 @@ project-root/
 │   ├── Machine Learning Documentation Format.docx
 │   ├── Machine Learning Documentation Format.pdf
 │   └── README.md
-├── video_demo/                    # Demo video folder (author: Mary Jones)
+├── video_demo/                        # Demo video folder (author: Mary Jones)
 │   └── pollen_demo_video.mp4
 ├── LICENSE
 └── README.md
